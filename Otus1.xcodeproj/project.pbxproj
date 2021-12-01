@@ -11,6 +11,16 @@
 		34013BA827554428005B9C25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BA727554428005B9C25 /* ContentView.swift */; };
 		34013BAA27554429005B9C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34013BA927554429005B9C25 /* Assets.xcassets */; };
 		34013BAD27554429005B9C25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34013BAC27554429005B9C25 /* Preview Assets.xcassets */; };
+		34013BB427554578005B9C25 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BB327554578005B9C25 /* DashboardScreen.swift */; };
+		34013BB827554655005B9C25 /* CatalogScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BB727554655005B9C25 /* CatalogScreen.swift */; };
+		34013BBA27554662005B9C25 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BB927554662005B9C25 /* ProfileScreen.swift */; };
+		34013BBC27554BE2005B9C25 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BBB27554BE2005B9C25 /* DashboardViewModel.swift */; };
+		34013BC127554E47005B9C25 /* AboutAppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BC027554E46005B9C25 /* AboutAppScreen.swift */; };
+		34013BC327555151005B9C25 /* ContactScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34013BC227555151005B9C25 /* ContactScreen.swift */; };
+		348C81222757B0EE0044B975 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C81212757B0EE0044B975 /* CatalogViewModel.swift */; };
+		348C81242757B0F90044B975 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C81232757B0F90044B975 /* AboutViewModel.swift */; };
+		348C81262757B1640044B975 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C81252757B1640044B975 /* ProfileViewModel.swift */; };
+		348C81282757BB400044B975 /* CatalogInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C81272757BB3F0044B975 /* CatalogInfoScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		34013BA727554428005B9C25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34013BA927554429005B9C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34013BAC27554429005B9C25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34013BB327554578005B9C25 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		34013BB727554655005B9C25 /* CatalogScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogScreen.swift; sourceTree = "<group>"; };
+		34013BB927554662005B9C25 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		34013BBB27554BE2005B9C25 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		34013BC027554E46005B9C25 /* AboutAppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppScreen.swift; sourceTree = "<group>"; };
+		34013BC227555151005B9C25 /* ContactScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScreen.swift; sourceTree = "<group>"; };
+		348C81212757B0EE0044B975 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		348C81232757B0F90044B975 /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		348C81252757B1640044B975 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		348C81272757BB3F0044B975 /* CatalogInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInfoScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,11 @@
 			children = (
 				34013BA527554428005B9C25 /* Otus1App.swift */,
 				34013BA727554428005B9C25 /* ContentView.swift */,
+				34013BBD27554DA0005B9C25 /* Dashboard */,
+				348C811F2757B0B50044B975 /* Catalog */,
+				348C811E2757B0A40044B975 /* Profile */,
+				348C81202757B0C00044B975 /* About */,
+				34013BC227555151005B9C25 /* ContactScreen.swift */,
 				34013BA927554429005B9C25 /* Assets.xcassets */,
 				34013BAB27554429005B9C25 /* Preview Content */,
 			);
@@ -65,6 +90,43 @@
 				34013BAC27554429005B9C25 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34013BBD27554DA0005B9C25 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				34013BB327554578005B9C25 /* DashboardScreen.swift */,
+				34013BBB27554BE2005B9C25 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		348C811E2757B0A40044B975 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				34013BB927554662005B9C25 /* ProfileScreen.swift */,
+				348C81252757B1640044B975 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		348C811F2757B0B50044B975 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				348C81212757B0EE0044B975 /* CatalogViewModel.swift */,
+				34013BB727554655005B9C25 /* CatalogScreen.swift */,
+				348C81272757BB3F0044B975 /* CatalogInfoScreen.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		348C81202757B0C00044B975 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				34013BC027554E46005B9C25 /* AboutAppScreen.swift */,
+				348C81232757B0F90044B975 /* AboutViewModel.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +200,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				34013BA827554428005B9C25 /* ContentView.swift in Sources */,
+				34013BC127554E47005B9C25 /* AboutAppScreen.swift in Sources */,
+				348C81242757B0F90044B975 /* AboutViewModel.swift in Sources */,
+				34013BC327555151005B9C25 /* ContactScreen.swift in Sources */,
+				34013BB827554655005B9C25 /* CatalogScreen.swift in Sources */,
+				348C81282757BB400044B975 /* CatalogInfoScreen.swift in Sources */,
+				34013BBA27554662005B9C25 /* ProfileScreen.swift in Sources */,
+				34013BBC27554BE2005B9C25 /* DashboardViewModel.swift in Sources */,
+				348C81262757B1640044B975 /* ProfileViewModel.swift in Sources */,
 				34013BA627554428005B9C25 /* Otus1App.swift in Sources */,
+				34013BB427554578005B9C25 /* DashboardScreen.swift in Sources */,
+				348C81222757B0EE0044B975 /* CatalogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
