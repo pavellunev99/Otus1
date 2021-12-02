@@ -21,8 +21,10 @@ struct DashboardScreen: View {
     }
 }
 
-//struct DashboardScreen_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DashboardScreen(activeTab: )
-//    }
-//}
+struct DashboardScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        DashboardScreen(activeTab: .constant(1))
+            .environmentObject(DashboardViewModel())
+            .environmentObject(CatalogViewModel())
+    }
+}

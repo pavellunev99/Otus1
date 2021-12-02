@@ -41,5 +41,6 @@ struct CatalogListView: View {
 struct CatalogScreen_Previews: PreviewProvider {
     static var previews: some View {
         CatalogScreen()
+            .environmentObject(CatalogViewModel())
     }
 }

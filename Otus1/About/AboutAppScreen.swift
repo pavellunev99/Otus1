@@ -26,5 +26,6 @@ struct AboutAppScreen: View {
 struct AboutAppScreen_Previews: PreviewProvider {
     static var previews: some View {
         AboutAppScreen()
+            .environmentObject(AboutAppViewModel())
     }
 }
