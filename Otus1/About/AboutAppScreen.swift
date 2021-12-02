@@ -14,12 +14,28 @@ struct AboutAppScreen: View {
 
     var body: some View {
         VStack {
-            Text("App Version\n\(aboutAppViewModel.appVersion)")
-                .multilineTextAlignment(.center)
+            AboutAppContentView(text: .constant("App Version\n\(aboutAppViewModel.appVersion)"))
             Button("Close") {
                 presentationMode.wrappedValue.dismiss()
             }
         }
+    }
+}
+
+struct AboutAppContentView: UIViewRepresentable {
+
+    @Binding var text: String
+
+    func makeUIView(context: Context) -> UILabel {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = .preferredFont(forTextStyle: .largeTitle)
+        label.textAlignment = .center
+        return label
+    }
+
+    func updateUIView(_ uiView: UILabel, context: Context) {
+        uiView.text = text
     }
 }
 
